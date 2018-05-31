@@ -11,10 +11,14 @@ Keepalived是一个基于VRRP协议来实现的服务高可用方案,可以利�
 - CHECK_IP      检查的ip地址
 - CHECK_PORT    检查的端口号
 
+### 版本
+---
+- 1.2 (docker tags: 1.3.9, latest) : keepalived版本为1.3.9
+
 ### 使用
 ---
-```
-docker pull lework/keepalived:1.3.9
+```bash
+docker pull lework/keepalived:v1.3.9
 docker run -tid --name keepalived --restart=always --net=host --cap-add=NET_ADMIN \
   -e VRID=53 \
   -e INTERFACE=ens33 \
@@ -22,5 +26,5 @@ docker run -tid --name keepalived --restart=always --net=host --cap-add=NET_ADMI
   -e VIRTUAL_MASK=24 \
   -e CHECK_IP=any \
   -e CHECK_PORT=22 \
-  lework/keepalived:1.3.9
+  lework/keepalived:v1.3.9
 ```
