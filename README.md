@@ -13,7 +13,7 @@ Keepalived是一个基于VRRP协议来实现的服务高可用方案,可以利�
 
 ### 版本
 ---
-- 1.2 (docker tags: 1.3.9, latest) : keepalived版本为1.3.9
+- 1.3.9 (docker tags: v1.3.9, latest) : keepalived版本为1.3.9
 
 ### 使用
 ---
